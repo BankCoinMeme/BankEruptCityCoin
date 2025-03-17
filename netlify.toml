@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"  # or any other build command if needed (or leave this blank if no build command is necessary)
+  publish = "."  # This ensures that the root directory is the public folder (where your index.html resides)
+
+[[redirects]]
+  from = "/"
+  to = "/_index.html"  # This redirects the root URL to the correct file if you are using _index.html instead of index.html
+  status = 200
